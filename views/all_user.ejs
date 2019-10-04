@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: darkgray;
+                width: 500px;
+                margin: 0 auto;
+            }
+            h3, hr {
+                color: cornsilk;
+            }
+            h3 {
+                text-align: center;
+            }
+            a {
+                color: tomato;
+                width: 120px;
+                hight: 50px;
+                background-color: whitesmoke;
+                padding: 10px;
+                border: 2px solid darkred;
+                text-align: center;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <a href="/">Create user</a>
+            <% listUsers.forEach((obj) => { %>
+                    <h3> <%= obj.name %> <h3>
+                    <h3> <%= obj.email %> </h3>
+                    <h3> <%= obj.age %> </h3>
+                    <hr>
+            <% }) %>
+        </main>
+    </body>
+</html>
